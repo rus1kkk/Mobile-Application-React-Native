@@ -76,7 +76,7 @@ export default function RegistrationScreen({ navigation }) {
                     </Pressable>
                     <Pressable
                         style={[styles.ButtonContinue, !formValid && styles.DisabledButton]}
-                        onLongPress={()=>alert("Удачная регистрация")}
+                        onLongPress={()=>alert("Удачная регистрация")} //TODO: Подключить БД/работать с storage, создавать аккаунты и хранить их
                         onPress={() => navigation.navigate('Home')}
                         disabled={!formValid}
                     >
